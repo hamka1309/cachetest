@@ -17,7 +17,7 @@ import com.segu.cachetest.model.Banner;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class CachePanner {
+public class CacheBanner {
     private SharedPreferences pref;
     private final Context context;
     private final String KEY_CACHE_DATA = "key_cache_data";
@@ -28,7 +28,7 @@ public class CachePanner {
     private OnDataSuccessListener onDataSuccessListener;
 
 
-    public CachePanner(Context context, String cacheName, OnDataSuccessListener onDataSuccessListener) {
+    public CacheBanner(Context context, String cacheName, OnDataSuccessListener onDataSuccessListener) {
         this.context = context;
         this.pref = context.getSharedPreferences(cacheName, Context.MODE_PRIVATE);
         this.onDataSuccessListener = onDataSuccessListener;
